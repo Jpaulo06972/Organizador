@@ -47,10 +47,10 @@ Java JDK 11+
 ### Comandos:
 
 # Compilar
-javac src/com/todolist/Main.java
+javac -cp "..\lib\mysql-connector-j-9.3.0.jar" -d ..\bin com\todolist\Main.java com\todolist\ui\Menu.java com\todolist\dao\*.java com\todolist\model\*.java com\todolist\database\*.java
 
 # Executar
-java -cp src com.todolist.Main
+java -cp "..\bin;..\lib\mysql-connector-j-9.3.0.jar" com.todolist.Main 
 
 ## 📊 Fluxograma
 ### graph LR
