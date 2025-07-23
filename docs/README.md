@@ -34,7 +34,9 @@ src/
 Criação: Validação de campos obrigatórios
 
 Atualização:
-
+    tarefa.setTitulo(novoTitulo);
+    tarefa.setConcluida(true);
+    taskDAO.atualizar(tarefa);
 ## 🚀 Execução
 ### Pré-requisitos:
 
